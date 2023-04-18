@@ -1,15 +1,15 @@
 .Scroller{
     position: relative;
-   overflow: hidden; 
+    overflow: hidden; 
     padding: 20px;
 }
 
 
-.Products-container{
-    padding: 10px;
-    display: flex;
-     overflow-x: hidden; 
+.Product-container{
+    padding: 0 10px;
+    overflow-x: hidden; 
     scroll-behavior: smooth;
+    display:flex
 }
 
 .pre-btn, .next-btn {
@@ -38,3 +38,35 @@
     height: 50px;
     cursor: pointer;
 }
+
+.product-cards{
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+    margin : 10px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding : -50px
+}
+
+.product-images{
+min-width: 300px;
+max-width: 300px;
+height: 400px;
+display: flex;
+}
+
+.products{
+min-width: 300px;
+max-width: 300px;
+height: 400px;
+display: flex;
+}
+
+.caption{
+    border: 1px solid black;
+    color: black;
+    position: relative;
+}
+
