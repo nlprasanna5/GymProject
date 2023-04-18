@@ -4,7 +4,7 @@ import CarouselFadeExample from '../components/Carousel/Carousel';
 // import ImageSlider from '../components/Training/ImageSlider';
 import GymPricing from '../components/Pricing/Pricing';
 import Header from '../components/header/Header';
-import Footer from '../components/Footer/footer';
+import Footer from '../components/Footer/Footer';
 
 
 const Home = () => {
