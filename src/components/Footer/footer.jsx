@@ -18,8 +18,7 @@ function Footer() {
                         <div className={footerStyle.media}>
                             <h1 className={footerStyle.gym}>GYM</h1>
                             <p>
-                                lorem ipsum bejvgbeinwoofnibgnwiknkn nfekgnerinvselnv
-                                nvkrnvkesnvornvoprs
+                            Train hard, stay focused, and never give up on your fitness goals
                             </p>
                             <div className={footerStyle.icons}>
                                 <div className={footerStyle.icon}> <TiSocialFacebook /></div>
@@ -33,30 +32,30 @@ function Footer() {
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Health living</h4>
                             <div className={footerStyle.footText}>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
+                                <p>Home</p>
+                                <p>About Us</p>
+                                <p>Classes</p>
+                                <p>Blogs</p>
                             </div>
 
                         </div>
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Services</h4>
                             <div className={footerStyle.footText}>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
+                                <p>Dancing</p>
+                                <p>Nutrition counseling</p>
+                                <p>Sports facilities</p>
+                                <p>Cardio machines </p>
                             </div>
                         </div>
                         <div>
                             <div className={footerStyle.health}>
                                 <h4 className={footerStyle.living}>Programs</h4>
                                 <div  className={footerStyle.footText}>
-                                    <p>Lorem</p>
-                                    <p>Lorem</p>
-                                    <p>Lorem</p>
-                                    <p>Lorem</p>
+                                    <p>Three months</p>
+                                    <p>Six months</p>
+                                    <p>One year</p>
+                                    <p>Five years</p>
                                 </div>
                             </div>
                         </div>
