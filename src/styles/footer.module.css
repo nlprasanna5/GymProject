@@ -52,7 +52,12 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 1;
+    /* line-height:0.7rem; */
   
+  }
+
+  .footText {
+    line-height: 0.5rem;
   }
   
   /* .services {

@@ -32,25 +32,32 @@ function Footer() {
                         </div>
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Health living</h4>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
+                            <div className={footerStyle.footText}>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                            </div>
+
                         </div>
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Services</h4>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
-                            <p>Lorem</p>
+                            <div className={footerStyle.footText}>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                                <p>Lorem</p>
+                            </div>
                         </div>
                         <div>
                             <div className={footerStyle.health}>
                                 <h4 className={footerStyle.living}>Programs</h4>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
-                                <p>Lorem</p>
+                                <div  className={footerStyle.footText}>
+                                    <p>Lorem</p>
+                                    <p>Lorem</p>
+                                    <p>Lorem</p>
+                                    <p>Lorem</p>
+                                </div>
                             </div>
                         </div>
                     </div>
