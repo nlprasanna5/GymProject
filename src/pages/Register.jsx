@@ -18,17 +18,17 @@ function Register() {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
   const firstNameRef = useRef(null);
-  
+
 
   useEffect(() => {
     firstNameRef.current.focus();
   }, []);
 
 
-  
+
 
   const validateUserName = () => {
-    const regex=/^[a-zA-Z0-9_]{3,16}$/;
+    const regex = /^[a-zA-Z0-9_]{3,16}$/;
     if (!userName) {
       setUserNameError('Username is required!');
       return false;
@@ -108,18 +108,14 @@ function Register() {
     setPassword('');
     setConfirmPassword('');
 
-
-
   }
-
-
 
   return (
     <>
 
       <div className={registerStyle.container}>
         <form
-         className={registerStyle.form}
+          className={registerStyle.form}
           onSubmit={handleSubmit}
 
         >
@@ -132,7 +128,7 @@ function Register() {
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             inputRef={firstNameRef}
-            
+
             errorMessage={userNameError}
           />
 
@@ -143,7 +139,7 @@ function Register() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
-           
+
             errorMessage={emailError}
           />
           <FormInput
@@ -153,7 +149,7 @@ function Register() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
-            
+
             errorMessage={passwordError}
           />
           <FormInput
@@ -163,7 +159,7 @@ function Register() {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             type="password"
-         
+
             errorMessage={confirmPasswordError}
           />
 

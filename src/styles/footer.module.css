@@ -1,0 +1,82 @@
+footer {
+    background-color: #0E0E0E;
+    color:white;
+    padding:2rem;
+  }
+  .gym {
+    color:red;
+    cursor: pointer;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3rem; */
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .content {
+    display: flex;
+    gap: 2rem;
+  
+    
+  }
+  
+  .media {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+  
+  }
+  
+  .icons {
+    display: flex;
+    gap:1rem;
+    font-size: 1.5rem;
+    align-items: center;
+  
+  }
+  
+  .icon {
+    background-color: white;
+    color: red;
+  align-self: center;
+    border-radius: 50%;
+    cursor: pointer;
+    /* width: 3vw;
+    height: 3vh; */
+  }
+  
+  .health {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+  }
+  
+  /* .services {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+  }
+  
+  .programs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+  } */
+  
+  .copy {
+    text-align: center;
+  }
+  
+  .living:hover {
+    color: red;;
+  }
+  
+  .living {
+    cursor:pointer;
+  }
