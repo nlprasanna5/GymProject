@@ -1,5 +1,6 @@
 import React from 'react';
 import footerStyle from '../../styles/footer.module.css';
+import { useNavigate } from 'react-router-dom';
 
 import {
     TiSocialFacebook,
@@ -10,6 +11,7 @@ import {
 
 
 function Footer() {
+    const navigate=useNavigate();
     return (
         <>
             <footer>
@@ -32,10 +34,10 @@ function Footer() {
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Health living</h4>
                             <div className={footerStyle.footText}>
-                                <p>Home</p>
-                                <p>About Us</p>
-                                <p>Classes</p>
-                                <p>Blogs</p>
+                                <p onClick={()=>navigate('/')} className={footerStyle.living}>Home</p>
+                                <p onClick={()=>navigate('/aboutus')} className={footerStyle.living}>About Us</p>
+                                <p onClick={()=>navigate('/classes')} className={footerStyle.living}>Classes</p>
+                                <p onClick={()=>navigate('/blogs')} className={footerStyle.living}>Blogs</p>
                             </div>
 
                         </div>
