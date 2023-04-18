@@ -103,6 +103,11 @@ function Register() {
 
     }
 
+    setEmail('');
+    setUserName('');
+    setPassword('');
+    setConfirmPassword('');
+
 
 
   }
