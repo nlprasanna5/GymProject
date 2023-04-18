@@ -1,0 +1,28 @@
+
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    justify-content: center;
+  }
+  .containerRight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  width: 350px;
+  }
+  .heading{
+    color: red;
+  }
+  .container1{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+  }
+  .container2{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+  }
