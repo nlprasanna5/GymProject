@@ -28,7 +28,7 @@ function Register() {
   
 
   const validateUserName = () => {
-    const regex = /^[a-zA-Z0-9_-]{3,16}$/;
+    const regex=/^[a-zA-Z0-9_]{3,16}$/;
     if (!userName) {
       setUserNameError('Username is required!');
       return false;

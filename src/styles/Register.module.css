@@ -18,7 +18,8 @@
 }
 
 .h1 {
-    color: rgb(77, 1, 77);
+    
+    color: #DC3545;
     text-align: center;
     margin-top: 2rem;
 }
@@ -28,7 +29,7 @@
     height: 50px;
     padding: 10px;
     border: none;
-    background-color: rebeccapurple;
+    background-color: #DC3545;
     color: white;
     border-radius: 5px;
     font-weight: bold;

@@ -8,17 +8,58 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
+
+  const [userNameError, setUserNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [match,setMatch]=useState('');
   
 
   const navigate = useNavigate();
   const users = getUsers();
 
+  const validateEmail = () => {
+    const regex = /^\S+@\S+\.\S+$/;
+    if (!email) {
+      setEmailError('Email is required!');
+      return false;
+    } else if (!regex.test(email)) {
+      setEmailError('It should be a valid email address!');
+      return false;
+    } else {
+      setEmailError('');
+      return true;
+    }
+  }
+
+  const validateUserName = () => {
+   
+    const regex=/^[a-zA-Z0-9_]{3,16}$/;
+    if (!userName) {
+      setUserNameError('Username is required!');
+      return false;
+    } else if (!regex.test(userName)) {
+      setUserNameError('Username should be 3-16 characters and shouldn\'t include any special character!');
+      return false;
+    } else {
+      setUserNameError('');
+      return true;
+    }
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
+
+    const emailValue=validateEmail();
+    const userValue=validateUserName();
     const details = users.find((user) => user.email === email && user.userName === userName)
-    if (details) {
+
+    
+    if (details && emailValue && userValue) {
       navigate('/');
 
+    } else {
+        setMatch('user not found')
+        
     }
   }
 
@@ -29,12 +70,15 @@ const Login = () => {
         <div className={loginStyle.formInput}>
           <label>UserName</label>
           <input type='text' value={userName} onChange={(e) => setUserName(e.target.value)}  />
+          <span>{userNameError}</span>
         </div>
         <div className={loginStyle.formInput}>
           <label>Email</label>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)}  />
+          <span>{emailError}</span>
         </div>
         <div>
+            <span>{match}</span>
           <button type="submit" className={loginStyle.button} >
             submit
           </button>
