@@ -13,7 +13,9 @@ import LoginMessage from "./components/SuccessMessage/LoginSuccess";
  import RegisterMessage from "./components/SuccessMessage/RegisterSuccess";
  import Footer from "./components/Footer/Footer";
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
@@ -33,7 +35,8 @@ function App() {
     </Routes>
     </div>
     <div>
-      <Footer/>
+    <Footer/>
+     
     </div>
     </div>
   );

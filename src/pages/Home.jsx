@@ -5,8 +5,12 @@ import CarouselFadeExample from '../components/Carousel/Carousel';
 import GymPricing from '../components/Pricing/Pricing';
 import Header from '../components/header/Header';
 
-import TrainingProgram from '../components/TrainingProgram/TrainingProgram';
+// import Footer from '../components/Footer/Footer';
+import Blogs from './Blogs';
+import AboutUs from './AboutUs';
 
+
+import TrainingProgram from '../components/TrainingProgram/TrainingProgram';
 
 const Home = () => {
   return (
@@ -14,9 +18,14 @@ const Home = () => {
     <div>
       <Header/>
       <CarouselFadeExample/>
-      <TrainingProgram/>
+
+      <AboutUs/>
       <GymPricing/>
+      <Blogs/>
+      <TrainingProgram/>
+    
      
+
       {/* <ImageSlider/> */}
 
     </div>

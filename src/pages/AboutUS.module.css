@@ -1,11 +1,13 @@
 
 
 .container{
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 200px;
     justify-content: center;
+    background-color:#242B2E ;
   }
   .containerRight{
     display: flex;
@@ -14,7 +16,7 @@
   width: 350px;
   }
   .heading{
-    color: red;
+    color: #D82E2F;
   }
   .container1{
     display: flex;
@@ -25,4 +27,7 @@
     display: flex;
     gap: 200px;
     justify-content: center;
+  }
+  .text{
+    color: white;
   }

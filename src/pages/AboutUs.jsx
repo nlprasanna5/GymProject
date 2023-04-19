@@ -24,7 +24,7 @@ const AboutUs = () => {
           <h1 className={style.heading}>About us</h1>
         </div>
         <div>
-          <h3>
+          <h3 className={style.text}>
             Our state-of-the-art facility is equipped with top-of-the-line
             equipment and staffed by experienced trainers who are dedicated to
             helping you succeed.
@@ -42,7 +42,7 @@ const AboutUs = () => {
           <div>
             <h1 className={style.heading}>Why choose us ?</h1>
           </div>
-          <div>
+          <div className={style.text}>
             <h3>Cunsultation with Experts</h3>
             <p>From weightlifting and cardio to yoga and Pilates, we offer a wide range of classes and activities to keep your workouts fresh and exciting.</p>
             <h3>Best workout facilities</h3>

@@ -1,0 +1,41 @@
+
+.container{
+ display: flex;
+ flex-direction: column;
+ background-color:#242B2E;
+
+}
+.upperContainer {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.img{
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+}
+.text{
+    color:white;
+    height: 550px;
+    width: 800px;
+    padding-top: 80px;
+    padding-left: 100px;
+    border-left: 5px solid  #D82E2F;
+}
+.hedh4{
+    margin-top: 60px;
+}
+
+.blogImage{
+    margin-left: 100px; 
+
+}
+.lowerContainer{
+    width: 80vw;
+    color: white;
+    margin-left: 150px;
+}
