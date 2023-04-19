@@ -108,6 +108,10 @@
     justify-content: center;
 }
 
+.trainContainer {
+    display: flex;
+}
+
 @media screen and (max-width: 600px) {
     .text {
         font-size: 1.5rem;
@@ -131,32 +135,48 @@
 
 
 
-@media only screen and (max-width: 425px) {
+
+
+@media only screen and (max-width: 760px) {
     .program {
         width: 100%;
         background-color: #242B2E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
     }
 
     .slider {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         margin: 1rem;
+        width:80%;
+        
     }
 
     .sliderWrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 70vh;
         gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+      
     }
 
     .slide {
         flex: 0 0 auto;
-        height: 30vh;
+        height: 40vh;
+        width:100%;
         position: relative;
         background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%);
+       
         
     }
     .text {
@@ -202,8 +222,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .sliderWrapper{
+        padding-left: 2rem;
+    }
+    .program {
+        padding-left:1rem;
+    }
     .slider {
-        width: 100%;
+        width: 80%;
     }
 
     .slide {

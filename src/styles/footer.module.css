@@ -60,19 +60,6 @@ footer {
     line-height: 0.5rem;
   }
   
-  /* .services {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  
-  }
-  
-  .programs {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  
-  } */
   
   .copy {
     text-align: center;
@@ -84,4 +71,26 @@ footer {
   
   .living {
     cursor:pointer;
+  }
+
+  @media only screen and (max-width:760px){
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    .health {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+    }
+
+    .footText{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
