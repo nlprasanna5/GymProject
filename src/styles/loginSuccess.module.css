@@ -1,0 +1,18 @@
+.successMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   
+    height:100vh;
+   
+}
+
+.log {
+    color:green;
+}
+
+.homeBtn{
+    background-color: #BB2D3B;
+    color: white;
+}

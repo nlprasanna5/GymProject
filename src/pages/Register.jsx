@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import FormInput from "../Utils/FormInput";
 import { getUsers } from "../Utils/localStorage";
 import registerStyle from '../styles/Register.module.css';
+import { useNavigate } from "react-router-dom";
 
 
 function Register() {
@@ -18,6 +19,7 @@ function Register() {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
   const firstNameRef = useRef(null);
+  const navigate=useNavigate();
 
 
   useEffect(() => {
@@ -100,6 +102,7 @@ function Register() {
       });
 
       localStorage.setItem('users', JSON.stringify(users));
+      navigate('/register-success');
 
     }
 
