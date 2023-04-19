@@ -11,6 +11,7 @@ import AboutUs from './AboutUs';
 
 
 import TrainingProgram from '../components/TrainingProgram/TrainingProgram';
+import TrainingSection from '../components/trainingSection/TrainingSection';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
 
       <AboutUs/>
       <GymPricing/>
+      <TrainingSection/>
       <Blogs/>
       <TrainingProgram/>
     
