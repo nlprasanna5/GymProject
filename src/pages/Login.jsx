@@ -55,7 +55,7 @@ const Login = () => {
 
     
     if (details && emailValue && userValue) {
-      navigate('/');
+      navigate('/login-success');
 
     } else {
         setMatch('user not found')

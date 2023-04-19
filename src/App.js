@@ -9,7 +9,9 @@ import AboutUs from "./pages/AboutUs";
 import Blogs from "./pages/Blogs";
 import Classes from "./pages/Classes";
 import Header from "./components/header/Header";
- 
+import LoginMessage from "./components/SuccessMessage/LoginSuccess";
+ import RegisterMessage from "./components/SuccessMessage/RegisterSuccess";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Route  path="/register"  element={<Register/>}/>
       <Route  path="/aboutus"  element={<AboutUs/>}/>
       <Route  path="/blogs"  element={<Blogs/>}/>
+      <Route path='/login-success' element={<LoginMessage/>}/>
+      <Route path='/register-success' element={<RegisterMessage/>}/>
     </Routes>
     </div>
     </div>
