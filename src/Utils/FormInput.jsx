@@ -3,7 +3,7 @@ import React from "react";
 // import {registerStyle} from '../../styles/Register.module.css';
 import registerStyle from '../styles/Register.module.css'
 
-function FormInput({ label, id, name, value, onChange, inputRef, type,errorMessage}) {
+function FormInput({ label, id, name, value,placeholder, onChange, inputRef, type,errorMessage}) {
   return (
     <div className={registerStyle.formInput}>
       <label htmlFor={id}>{label}</label>
@@ -12,6 +12,7 @@ function FormInput({ label, id, name, value, onChange, inputRef, type,errorMessa
         id={id}
         name={name}
         value={value}
+        placeholder={placeholder}
         onChange={onChange}
         ref={inputRef} className={registerStyle.content}
      

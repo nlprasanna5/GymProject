@@ -131,7 +131,7 @@ function Register() {
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             inputRef={firstNameRef}
-
+            placeholder='Username'
             errorMessage={userNameError}
           />
 
@@ -142,7 +142,7 @@ function Register() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
-
+            placeholder='Email'
             errorMessage={emailError}
           />
           <FormInput
@@ -152,7 +152,7 @@ function Register() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
-
+             placeholder='Password'
             errorMessage={passwordError}
           />
           <FormInput
@@ -162,7 +162,7 @@ function Register() {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             type="password"
-
+            placeholder='Confirm password'
             errorMessage={confirmPasswordError}
           />
 
