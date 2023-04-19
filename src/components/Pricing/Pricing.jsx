@@ -5,7 +5,11 @@ function GymPricing() {
     return (
     <div className={style.mainContainer}>
       <div className={style.pricingHeading}>
-        <h1 className={style.pricingHeading}>Our Plans</h1>
+        <h1 className={style.pricingHeading}>Our Plans
+            <h6>"Get Fit and Save Big with </h6>
+            <h6>Our Gym Membership Plans -  </h6>
+         <h6>Choose the Best Option for You!"</h6>
+        </h1>
     </div>
     <div className={style.pricingContainer}>
     
@@ -17,7 +21,7 @@ function GymPricing() {
         <li>Basic workout equipment</li>
         <li>No personal training sessions</li>
       </ul>
-      <button>Sign Up</button>
+      <button>Register</button>
     </div>
     <div className={style.pricingPlan}>
       <h2>Premium</h2>     
@@ -27,7 +31,7 @@ function GymPricing() {
         <li>Full range of workout equipment</li>
         <li>1 personal training session/month</li>
       </ul>
-      <button>Sign Up</button>
+      <button>Register</button>
     </div>
     <div className={style.pricingPlan}>
       <h2>Elite</h2>
@@ -37,7 +41,7 @@ function GymPricing() {
         <li>Full range of workout equipment</li>
         <li>2 personal training sessions/month</li>
       </ul>
-      <button>Sign Up</button>
+      <button>Register</button>
     </div>
   </div>
 

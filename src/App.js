@@ -12,7 +12,9 @@ import Header from "./components/header/Header";
 import LoginMessage from "./components/SuccessMessage/LoginSuccess";
  import RegisterMessage from "./components/SuccessMessage/RegisterSuccess";
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
@@ -30,6 +32,9 @@ function App() {
       <Route path='/login-success' element={<LoginMessage/>}/>
       <Route path='/register-success' element={<RegisterMessage/>}/>
     </Routes>
+    </div>
+    <div>
+    <Footer/>
     </div>
     </div>
   );
