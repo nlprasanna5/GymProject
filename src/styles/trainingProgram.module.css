@@ -5,6 +5,7 @@
 
 .train {
     color: #E21818;
+    
 }
 
 .slider {
@@ -32,10 +33,10 @@
 .slide {
     flex: 0 0 auto;
     width: calc(100% / 5);
-    height: 30vh;
+    height: 40vh;
     padding: 0 0.625rem;
     position: relative;
-    background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%);
+    /* background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%); */
 
 }
 
@@ -50,15 +51,20 @@
 
 
 .prev {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D82E2F;
     height: 2.5rem;
     width: 2.5rem;
     text-align: center;
-
 }
 
 .next {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D82E2F;
     height: 2.5rem;
     width: 2.5rem;
     text-align: center;
@@ -68,9 +74,6 @@
 .change {
     display: flex;
     justify-content: center;
-
-
-
 }
 
 .modify {
@@ -97,8 +100,8 @@
 
 .text {
     position: absolute;
-    top: 4rem;
-    left: 3rem;
+    top: 6rem;
+    left: 4rem;
     font-size: 2rem;
     color: white
 }
@@ -109,7 +112,7 @@
 }
 
 .trainContainer {
-    display: flex;
+    margin-left: 28rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -175,7 +178,7 @@
         height: 40vh;
         width:100%;
         position: relative;
-        background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%);
+        /* background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%); */
        
         
     }

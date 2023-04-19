@@ -1,0 +1,46 @@
+
+
+.teamSection {
+    background-color:#242B2E;
+    color: white;
+    padding: 50px;
+  }
+  
+  .teamSectionTitle {
+    color: #D82E2F;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .teamMemberList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teamMember {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .teamMemberImage {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .teamMemberName {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .teamMemberRole {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .teamMemberBio {
+    font-size: 0.9rem;
+  }
+  
