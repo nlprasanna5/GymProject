@@ -27,8 +27,6 @@ function Footer() {
                                 <div className={footerStyle.icon}><TiSocialInstagram /></div>
                                 <div className={footerStyle.icon}><TiSocialTwitter /></div>
 
-
-
                             </div>
                         </div>
                         <div className={footerStyle.health}>
