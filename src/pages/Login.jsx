@@ -69,12 +69,12 @@ const Login = () => {
         <h1 className={loginStyle.h1} >Login</h1>
         <div className={loginStyle.formInput}>
           <label>UserName</label>
-          <input type='text' value={userName} onChange={(e) => setUserName(e.target.value)}  />
+          <input type='text' value={userName} onChange={(e) => setUserName(e.target.value)} placeholder='Username' />
           <span>{userNameError}</span>
         </div>
         <div className={loginStyle.formInput}>
           <label>Email</label>
-          <input type='email' value={email} onChange={(e) => setEmail(e.target.value)}  />
+          <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'  />
           <span>{emailError}</span>
         </div>
         <div>
