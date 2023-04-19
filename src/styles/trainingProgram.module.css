@@ -1,0 +1,230 @@
+.program {
+    width: 100%;
+    background-color: #242B2E;
+}
+
+.train {
+    color: #E21818;
+}
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+
+}
+
+.sliderWrapper {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+
+
+
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(100% / 5);
+    height: 30vh;
+    padding: 0 0.625rem;
+    position: relative;
+    background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%);
+
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+
+
+
+.prev {
+
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+
+}
+
+.next {
+
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+
+}
+
+.change {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.modify {
+    display: flex;
+    gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.next {
+    right: 0;
+
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #BB2D3B;
+    color: white;
+    border: none;
+
+}
+
+.text {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    font-size: 2rem;
+    color: white
+}
+
+.textContent {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .slide {
+        width: calc(100% / 4);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .slide {
+        width: calc(100% / 3);
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .program {
+        width: 100%;
+        background-color: #242B2E;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .sliderWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70vh;
+        gap: 1rem;
+    }
+
+    .slide {
+        flex: 0 0 auto;
+        height: 30vh;
+        position: relative;
+        background: linear-gradient(25deg, rgb(214, 76, 127), rgb(238, 71, 88) 50%);
+        
+    }
+    .text {
+        position: absolute;
+        top: 6rem;
+        left: 10rem;
+        font-size: 1.5rem;
+        color: white
+    }
+    
+
+    .change {
+        display: none;
+    }
+
+    .modify {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .text {
+        position: absolute;
+        top: 6rem;
+        left: 5rem;
+       
+        font-size: 1.5rem;
+        color: white
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    .text {
+        position: absolute;
+        top: 6rem;
+        left: 5rem;
+       
+        font-size: 1.5rem;
+        color: white
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .prev,
+    .next {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+        margin-top: -30px;
+    }
+
+    .prev {
+        left: 0.625rem;
+    }
+
+    .next {
+        right: 0.625rem;
+    }
+
+
+
+}

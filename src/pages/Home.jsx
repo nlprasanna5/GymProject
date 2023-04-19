@@ -5,6 +5,7 @@ import CarouselFadeExample from '../components/Carousel/Carousel';
 import GymPricing from '../components/Pricing/Pricing';
 import Header from '../components/header/Header';
 import Footer from '../components/Footer/Footer';
+import TrainingProgram from '../components/TrainingProgram/TrainingProgram';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
     <div>
       <Header/>
       <CarouselFadeExample/>
+      <TrainingProgram/>
       <GymPricing/>
       <Footer/>
       {/* <ImageSlider/> */}
