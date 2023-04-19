@@ -37,7 +37,6 @@ function Footer() {
                                 <p onClick={()=>navigate('/classes')} className={footerStyle.living}>Classes</p>
                                 <p onClick={()=>navigate('/blogs')} className={footerStyle.living}>Blogs</p>
                             </div>
-
                         </div>
                         <div className={footerStyle.health}>
                             <h4 className={footerStyle.living}>Services</h4>
