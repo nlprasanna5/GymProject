@@ -18,8 +18,10 @@ function Register() {
   const [passwordError, setPasswordError] = useState('');
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
+  const [duplicate, setDuplicate] = useState('');
+
   const firstNameRef = useRef(null);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -92,17 +94,31 @@ function Register() {
     const isPasswordValid = validatePassword();
     const isConfirmPasswordValid = validateConfirmPassword();
 
+    // let user = getUsers();
+
+
     if (isUserNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
       const users = getUsers();
-      users.push({
-        userName,
-        email,
-        password,
-        confirmPassword
+      const checkDuplicateRegister = users.find((item) => {
+        return item.email === email;
+
       });
 
-      localStorage.setItem('users', JSON.stringify(users));
-      navigate('/register-success');
+      if (checkDuplicateRegister) {
+        setDuplicate('User already exists')
+      } else {
+        setDuplicate('');
+        users.push({
+          userName,
+          email,
+          password,
+          confirmPassword
+        });
+
+        localStorage.setItem('users', JSON.stringify(users));
+        navigate('/register-success');
+      }
+
 
     }
 
@@ -152,7 +168,7 @@ function Register() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
-             placeholder='Password'
+            placeholder='Password'
             errorMessage={passwordError}
           />
           <FormInput
@@ -170,7 +186,11 @@ function Register() {
           <button type="submit" className={registerStyle.button} >
             submit
           </button>
-          <small>Already have an account? <span onClick={()=>navigate('/login')} className={registerStyle.account}>Login</span></small>
+          <div className={registerStyle.duplicate}>
+            <small style={{ color: 'red' }}>{duplicate}</small>
+            <small>Already have an account? <span onClick={() => navigate('/login')} className={registerStyle.account}>Login</span></small>
+          </div>
+
         </form>
       </div>
     </>

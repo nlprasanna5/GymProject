@@ -9,6 +9,8 @@ const images = [
     "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80",
     "https://images.unsplash.com/photo-1561214095-fea147325936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
     "https://thumbs.dreamstime.com/b/gym-24699087.jpg",
+    "https://thumbs.dreamstime.com/b/gym-24699087.jpg",
+    "https://thumbs.dreamstime.com/b/gym-24699087.jpg",
 ];
 
 const training = ['Body Building', 'Yoga', 'Aerobic', 'Flexibility', 'Personal Training', 'Plyometric Boxes', 'Open 24hrs', 'Body Building', 'Yoga', 'Aerobic'];
@@ -19,6 +21,7 @@ images.push(images[1]);
 
 const TrainingProgram = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
+
     const goToNextSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === images.length - 2 ? 1 : prevIndex + 1

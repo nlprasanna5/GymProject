@@ -8,11 +8,11 @@ function GymPricing() {
     <div id='pricing' className={style.mainContainer}>
       <div className={style.price}>
         <div className={style.pricingHeading}>
-          <h1 className={style.plan}>Our Plans
+          <h1 className={style.plan}>Our Plans</h1>
             <h6>"Get Fit and Save Big with </h6>
             <h6>Our Gym Membership Plans -  </h6>
             <h6>Choose the Best Option for You!"</h6>
-          </h1>
+          
         </div>
         <div className={style.pricingContainer}>
 
