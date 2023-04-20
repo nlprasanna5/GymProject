@@ -1,33 +1,47 @@
 
 
 .container{
-    /* margin-top: 100px; */
-    padding-top: 100px;
+    
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 10rem;
     justify-content: center;
     background-color:#242B2E ;
   }
   .containerRight{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  width: 350px;
+    gap:1rem;
+  width: 26rem;
   }
   .heading{
     color: #D82E2F;
   }
   .container1{
     display: flex;
-    gap: 200px;
+    gap: 10rem;
     justify-content: center;
   }
   .container2{
     display: flex;
-    gap: 200px;
+    gap: 10rem;
     justify-content: center;
   }
   .text{
     color: white;
   }
+
+  @media screen and (max-width: 900px) {
+   .container1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+   }
+   .container2{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+   }
+}
