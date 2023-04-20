@@ -187,9 +187,9 @@
     }
     .text {
         position: absolute;
-        top: 6rem;
-        left: 10rem;
-        font-size: 1.5rem;
+        top: 8rem;
+        left: 5rem;
+        font-size: 1.8rem;
         color: white
     }
     
@@ -218,10 +218,10 @@
 @media only screen and (max-width:375px){
     .text {
         position: absolute;
-        top: 6rem;
-        left: 5rem;
+        top: 7rem;
+        left: 3.5rem;
        
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: white
     }
 
@@ -261,10 +261,16 @@
 
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1100px){
     .trainContainer{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .text {
+        position: absolute;
+        top:8rem;
+        left:2rem;
+        font-size: 2rem;
     }
 }
