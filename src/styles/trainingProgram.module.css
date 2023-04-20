@@ -11,14 +11,14 @@
 .slider {
     position: relative;
     margin: 0 auto;
-    overflow: hidden;
     width: 80%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    overflow: hidden;
+    overflow:hidden;
+    scroll-behavior: smooth;
 
 }
 

@@ -5,6 +5,9 @@ import React from 'react'
 import style from "./AboutUS.module.css"
 import Button from 'react-bootstrap/Button';
 const AboutUs = () => {
+  function showAlert(){
+    alert("clicked from about us section")
+  }
   return (
     <div className={style.container}>
     <div className={style.container1}>
@@ -31,7 +34,7 @@ const AboutUs = () => {
           </h3>
         </div>
         <div>
-        <Button variant="danger">Learn more</Button>
+        <Button variant="danger" onClick={showAlert}>Learn more</Button>
         </div>
       </div>
     </div>

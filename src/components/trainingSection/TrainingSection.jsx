@@ -37,7 +37,7 @@ const TrainingSection = () => {
       ];
     
       return (
-        <section className={style.teamSection}>
+        <section id='trainer' className={style.teamSection}>
           <h2 className={style.teamSectionTitle}>Meet Our Trainers</h2>
           <div className={style.teamMemberList}>
             {teamMembers.map((member, index) => (
