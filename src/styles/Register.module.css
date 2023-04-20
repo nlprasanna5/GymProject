@@ -9,13 +9,14 @@
         url("https://watermark.lovepik.com/photo/40138/5520.jpg_wh1200.jpg");
     background-size: cover;
     background-position: center;
+   
 }
 
 .form {
     background-color: white;
     padding: 0px 60px;
     border-radius: 10px;
-   
+    padding-bottom:2rem;
 }
 
 .h1 {
@@ -69,3 +70,6 @@ span {
    
 }
 
+.account {
+    cursor: pointer;
+}
