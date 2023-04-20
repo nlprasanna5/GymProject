@@ -3,7 +3,7 @@ import style from './Pricing.module.css'
 
 function GymPricing() {
     return (
-    <div className={style.mainContainer}>
+    <div id='pricing' className={style.mainContainer}>
       <div className={style.pricingHeading}>
         <h1 className={style.pricingHeading}>Our Plans
             <h6>"Get Fit and Save Big with </h6>

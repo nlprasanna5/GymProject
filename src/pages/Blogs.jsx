@@ -5,7 +5,6 @@ import style from "./Blogs.module.css"
 import Button from 'react-bootstrap/Button';
 const Blogs = () => {
   const[show,setShow]=useState(false)
-  console.log(show)
   function handleTogle(){
     if(show===false){
       setShow(true)
@@ -15,7 +14,7 @@ const Blogs = () => {
     }
   }
   return (
-    <div className={style.container}>
+    <div id='blogs' className={style.container}>
         <div className={style.upperContainer}>
             <div className={style.blogImage}>
               <img className={style.img} src="https://cdn.pixabay.com/photo/2020/06/12/00/11/boxing-5288635_960_720.jpg" alt=''/>

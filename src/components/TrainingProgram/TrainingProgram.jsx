@@ -32,7 +32,7 @@ const TrainingProgram = () => {
     };
 
     return (
-        <div className={programStyle.program}>
+        <div  id="training" className={programStyle.program}>
             <div className={programStyle.slider}>
                 <div className={programStyle.trainContainer}>
                     <h2 className={programStyle.train}>Training Programs</h2>
