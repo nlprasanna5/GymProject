@@ -11,7 +11,6 @@ import Classes from "./pages/Classes";
 import Header from "./components/header/Header";
 import LoginMessage from "./components/SuccessMessage/LoginSuccess";
  import RegisterMessage from "./components/SuccessMessage/RegisterSuccess";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer";
 function App() {

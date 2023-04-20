@@ -8,6 +8,7 @@ import Header from '../components/header/Header';
 // import Footer from '../components/Footer/Footer';
 import Blogs from './Blogs';
 import AboutUs from './AboutUs';
+import Classes from './Classes';
 
 
 import TrainingProgram from '../components/TrainingProgram/TrainingProgram';
@@ -21,6 +22,7 @@ const Home = () => {
       <CarouselFadeExample/>
 
       <AboutUs/>
+      <Classes/>
       <GymPricing/>
       <TrainingSection/>
       <Blogs/>
