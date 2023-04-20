@@ -24,7 +24,7 @@ const Header = () => {
     <div>
     <Navbar  fixed="top" bg="dark" variant={"dark"} expand="lg">
        <Container>
-         <Navbar.Brand  as={NavLink} to={"/"}>GYM</Navbar.Brand>
+         <Navbar.Brand    as={NavLink} to={"/"}>GYM</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

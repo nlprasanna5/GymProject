@@ -8,11 +8,11 @@ import Carousel from 'react-bootstrap/Carousel';
 function CarouselFadeExample() {
   return (
     <div className={carouselStyle.carousel}>
-    <Carousel fade  >
-      <Carousel.Item>
+    <Carousel >
+    <Carousel.Item interval={2000} >
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/17840/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -20,10 +20,21 @@ function CarouselFadeExample() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000} >
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          {/* <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item  interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://images.pexels.com/photos/949134/pexels-photo-949134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Second slide"
         />
 
@@ -32,10 +43,10 @@ function CarouselFadeExample() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item  interval={2000}>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/1554824/pexels-photo-1554824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/15046713/pexels-photo-15046713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Third slide"
         />
 
