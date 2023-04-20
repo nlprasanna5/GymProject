@@ -10,8 +10,8 @@ import Button from 'react-bootstrap/Button';
 import {NavLink,useNavigate} from 'react-router-dom'
 const Header = () => {
     const navLogin=useNavigate(null)
-    function toLogin(){
-     navLogin("/login")
+    function toRegister(){
+     navLogin("/register")
     }
      //"#pricing"
      //"training"
@@ -39,7 +39,7 @@ const Header = () => {
              <Nav.Link  as={NavLink} to="/classes" >CLASSES</Nav.Link>
              <Nav.Link  as={NavLink} to="/blogs">BLOGS</Nav.Link>
            </Nav>
-         <Button onClick={toLogin} variant="danger">JOIN US</Button>
+         <Button onClick={toRegister} variant="danger">JOIN US</Button>
        </Navbar.Collapse>
      </Container>
    </Navbar>

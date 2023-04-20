@@ -23,9 +23,9 @@ function Footer() {
                             Train hard, stay focused, and never give up on your fitness goals
                             </p>
                             <div className={footerStyle.icons}>
-                                <div className={footerStyle.icon}> <TiSocialFacebook /></div>
-                                <div className={footerStyle.icon}><TiSocialInstagram /></div>
-                                <div className={footerStyle.icon}><TiSocialTwitter /></div>
+                              <a href='https://www.facebook.com/' ><div className={footerStyle.icon} >  <TiSocialFacebook /></div> </a> 
+                             <a href='https://www.instagram.com/'>  <div className={footerStyle.icon} ><TiSocialInstagram /></div> </a> 
+                              <a href='https://twitter.com/'> <div className={footerStyle.icon} ><TiSocialTwitter /></div></a> 
 
                             </div>
                         </div>

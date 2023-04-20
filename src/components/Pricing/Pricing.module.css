@@ -1,11 +1,12 @@
-.mainContainer {
+ .mainContainer {
     background-color: #242B2E;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     max-width: 100vw;
-    height: 1000px;
+    
+    height:90vh;
     justify-content: center;
 }
 
@@ -23,7 +24,7 @@
     align-items: center;
     margin: 0 auto;
 
-    height: 1000px;
+    /* height: 1000px; */
    
 }
 
@@ -78,3 +79,5 @@ button:hover {
     color: orange;
     cursor: pointer;
 }
+
+ 
