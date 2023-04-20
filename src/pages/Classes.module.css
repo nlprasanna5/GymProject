@@ -5,6 +5,7 @@
     background-color:#242B2E;
     align-items: center;
     /* width:100vw; */
+    /* padding: 2rem; */
     
 }
 
@@ -100,7 +101,8 @@
         width:14rem;
     }
     .classTitle{
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-top: 5rem;
     }
     .classQuote {
         font-size: 1rem;
@@ -137,5 +139,9 @@
 
     .textContainer{
         margin-top:4rem;
+    }
+    .classTitle{
+        font-size: 2rem;
+        margin-top: 5rem;
     }
 }
