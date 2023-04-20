@@ -79,3 +79,18 @@ span {
     flex-direction: column;
     gap:0.5rem;
 }
+
+
+@media only screen and (max-width:425px){
+    .form {
+        width:95vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .formInput{
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
