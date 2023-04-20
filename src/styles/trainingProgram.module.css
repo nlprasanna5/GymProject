@@ -112,7 +112,10 @@
 }
 
 .trainContainer {
-    margin-left: 28rem;
+    /* margin-left: 28rem; */
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -256,4 +259,12 @@
 
 
 
+}
+
+@media only screen and (max-width:1000px){
+    .trainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -24,7 +24,9 @@
 
 .imgContainer {
     display: flex;
-    gap:2rem;
+    gap:1rem;
+    flex-direction: row;
+    padding:1rem;
 
 }
 
@@ -50,6 +52,55 @@
 }
 
 
+
+
+
+
+
+
+
+/* @media only screen and (max-width:1200px){
+    .classes{
+        display: flex;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+    }
+    .classContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:70vw;
+        padding: 2rem;
+    }
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .classImage {
+        height:15rem;
+        width:15rem;
+    }
+    .classTitle{
+        font-size: 2rem;
+    }
+    .classQuote {
+        font-size: 1rem;
+        
+    }
+} */
 
 @media only screen and (max-width:1200px){
     .classes{
@@ -80,19 +131,20 @@
         align-items: center;
     }
     .classImage {
-        height:15rem;
-        width:15rem;
+        display: flex;
+        height:14rem;
+        width:14rem;
     }
     .classTitle{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .classQuote {
-        font-size: 1rem;
+        font-size: 0.8rem;
         
     }
 }
 
-@media only screen and (max-width:760px){
+@media only screen and (max-width:600px){
     .classes{
         display: flex;
         height:100vh;
@@ -106,30 +158,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width:80vw;
+        width:60vw;
     }
-    .textContainer{
+    .imgContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-    .imgContainer{
+    .classImage{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .classImage {
-        height:10rem;
-        width:10rem;
-    }
-    .classTitle{
-        font-size: 1.5rem;
-    }
-    .classQuote {
-        font-size: 0.8rem;
-        
     }
 }
-
