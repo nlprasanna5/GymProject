@@ -19,7 +19,7 @@ const Blogs = () => {
             <div className={style.blogImage}>
               <img className={style.img} src="https://cdn.pixabay.com/photo/2020/06/12/00/11/boxing-5288635_960_720.jpg" alt=''/>
             </div>
-            <div className={style.text}>
+            <div className={style.textGym}>
               <h1>Top 5 Benefits of Joining a Gym</h1>
               <h4 className={style.hedh4}>Are you struggling to stay motivated to exercise? Do you find it difficult to push yourself to work out at home? Joining a gym might be the solution you need. Not only can a gym provide you with the equipment you need to work out effectively, but it can also offer many other benefits. In this post, we'll explore the top 5 benefits of joining a gym.</h4>
               <div>
