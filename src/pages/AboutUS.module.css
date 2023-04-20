@@ -33,15 +33,57 @@
   }
 
   @media screen and (max-width: 900px) {
+
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:3rem;
+      
+    }
    .container1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 2rem;
+    gap:2rem;
+    width:75vw;
    }
    .container2{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    gap:2rem;
+    width:75vw;
    }
+
+   .containerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+ 
+  }
+
+  .text {
+    text-align: start;
+    width:18rem;
+  }
+
+  .aboutTitle{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .textContent{
+    display: flex;
+    justify-content: center;
+  
+   
+
+  }
 }

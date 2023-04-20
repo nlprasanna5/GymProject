@@ -9,6 +9,7 @@ const AboutUs = () => {
     alert("clicked from about us section")
   }
   return (
+    // <div className={style.aboutContainer}>
     <div className={style.container}>
     <div className={style.container1}>
       <div>
@@ -23,15 +24,15 @@ const AboutUs = () => {
         ></iframe>
       </div>
       <div className={style.containerRight}>
-        <div>
-          <h1 className={style.heading}>About us</h1>
+        <div className={style.aboutTitle}>
+          <h3 className={style.heading}>About us</h3>
         </div>
-        <div>
-          <h3 className={style.text}>
+        <div className={style.textConent}>
+          <p className={style.text}>
             Our state-of-the-art facility is equipped with top-of-the-line
             equipment and staffed by experienced trainers who are dedicated to
             helping you succeed.
-          </h3>
+          </p>
         </div>
         <div>
         <Button variant="danger" onClick={showAlert}>Learn more</Button>
@@ -43,7 +44,7 @@ const AboutUs = () => {
      
         <div className={style.containerRight}>
           <div>
-            <h1 className={style.heading}>Why choose us ?</h1>
+            <h3 className={style.heading}>Why choose us ?</h3>
           </div>
           <div className={style.text}>
             <h3>Cunsultation with Experts</h3>
@@ -58,6 +59,7 @@ const AboutUs = () => {
      
     </div>
   </div>
+  // </div>
   )
 }
 
