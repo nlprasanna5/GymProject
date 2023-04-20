@@ -170,6 +170,7 @@ function Register() {
           <button type="submit" className={registerStyle.button} >
             submit
           </button>
+          <small>Already have an account? <span onClick={()=>navigate('/login')} className={registerStyle.account}>Login</span></small>
         </form>
       </div>
     </>
