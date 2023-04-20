@@ -1,7 +1,9 @@
 import React from 'react';
-import style from './Pricing.module.css'
+import style from './Pricing.module.css';
+import { useNavigate } from 'react-router-dom';
 
 function GymPricing() {
+  const navigate=useNavigate();
     return (
     <div id='pricing' className={style.mainContainer}>
       <div className={style.pricingHeading}>
@@ -21,7 +23,7 @@ function GymPricing() {
         <li>Basic workout equipment</li>
         <li>No personal training sessions</li>
       </ul>
-      <button>Register</button>
+      <button onClick={()=>navigate('/register')}>Register</button>
     </div>
     <div className={style.pricingPlan}>
       <h2>Premium</h2>     
@@ -31,7 +33,7 @@ function GymPricing() {
         <li>Full range of workout equipment</li>
         <li>1 personal training session/month</li>
       </ul>
-      <button>Register</button>
+      <button onClick={()=>navigate('/register')}>Register</button>
     </div>
     <div className={style.pricingPlan}>
       <h2>Elite</h2>
@@ -41,7 +43,7 @@ function GymPricing() {
         <li>Full range of workout equipment</li>
         <li>2 personal training sessions/month</li>
       </ul>
-      <button>Register</button>
+      <button onClick={()=>navigate('/register')}>Register</button>
     </div>
   </div>
 
