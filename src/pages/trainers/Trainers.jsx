@@ -78,7 +78,7 @@ export default function Trainers() {
                             <div className={style.card} key={index}>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img className={style.img} src={person.src} />
+                                        <img className={style.img} src={person.src} alt='trainers-images'/>
                                     </div>
 
 
