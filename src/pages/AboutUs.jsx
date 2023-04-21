@@ -1,6 +1,6 @@
 
 
-
+import ReactPlayer from 'react-player/youtube';
 import React from 'react'
 import style from "./AboutUS.module.css"
 import Button from 'react-bootstrap/Button';
@@ -13,15 +13,11 @@ const AboutUs = () => {
     <div className={style.container}>
     <div className={style.container1}>
       <div>
-        <iframe
-          width="300"
-          height="315"
-          src="https://www.youtube.com/embed/-a4vyrtxr_U"
-          title="YouTube video player"
-          // frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          // allowfullscreen
-        ></iframe>
+           <ReactPlayer  url="https://www.youtube.com/watch?v=i0k5DHJEsvA"
+            width="290px"
+            height="350px"
+            controls={true}
+           />
       </div>
       <div className={style.containerRight}>
         <div className={style.aboutTitle}>
@@ -55,7 +51,11 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <iframe width="300" height="315" src="https://www.youtube.com/embed/HnoPHqrdXQ8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <ReactPlayer  url="https://www.youtube.com/watch?v=f-QlBdAPe7M"
+            width="290px"
+            height="350px"
+            controls={true}
+           />
      
     </div>
   </div>
