@@ -53,7 +53,7 @@ Finally, joining a gym can provide you with access to professional guidance. Man
 <br/>
 <br/>
 Closing paragraph:
-If you're looking to improve your fitness and overall health, joining a gym can be a great step in the right direction. With access to professional equipment, a variety of classes and programs, social support, improved mental health, and professional guidance, you'll have everything you need to achieve your goals. So what are you waiting for? Join a gym today and start reaping the benefits!
+If you're looking to improve your fitness,overall health, joining a gym can be a great step in the right direction. With access to professional equipment, a variety of classes and programs, social support, improved mental health, you'll have everything you need to achieve your goals. So what are you waiting for? Join a gym today and start reaping the benefits!
           </h5>
           
           :""
