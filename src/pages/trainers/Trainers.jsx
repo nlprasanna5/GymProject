@@ -65,10 +65,10 @@ export default function Trainers() {
         <div className={style.mainContainer}>
             <div className={style.headingContainers}>
                 <div>
-                    <h1>Wole Team</h1>
+                    <h1>Meet Our Team </h1>
                 </div>
                 <div>
-                    <h3>We are delevering best </h3>
+                    <h3> We are a team of Industry experts.</h3>
                 </div>
             </div>
             <div className={style.container}>
