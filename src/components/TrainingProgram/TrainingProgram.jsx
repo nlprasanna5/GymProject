@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import programStyle from "../../styles/trainingProgram.module.css";
 
 const images = [
@@ -9,7 +9,7 @@ const images = [
     "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80",
     "https://images.unsplash.com/photo-1561214095-fea147325936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
     "https://thumbs.dreamstime.com/b/gym-24699087.jpg",
-    
+
 ];
 
 const training = ['Body Building', 'Yoga', 'Aerobic', 'Flexibility', 'Personal Training', 'Plyometric Boxes', 'Open 24hrs', 'Body Building', 'Yoga', 'Aerobic'];
@@ -20,36 +20,41 @@ images.push(images[1]);
 
 const TrainingProgram = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
+    
 
     const goToNextSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === images.length - 2 ? 1 : prevIndex + 1
         );
+       
+
     };
 
     const goToPrevSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === 1 ? images.length - 2 : prevIndex - 1
         );
+       
+
     };
 
     return (
-        <div  id="training" className={programStyle.program}>
+        <div id="training" className={programStyle.program}>
             <div className={programStyle.slider}>
                 <div className={programStyle.trainContainer}>
                     <h2 className={programStyle.train}>Training Programs</h2>
                 </div>
 
-                <div className={programStyle.sliderWrapper}
+                <div className={programStyle.sliderWrapper} 
                     style={{ transform: `translateX(-${currentIndex * (100 / images.length)}%)`, }}
                 >
-                    {images.map((image, index) => ( 
-                            <div className={programStyle.slide} key={index}>
-                                <img src={image} alt={`Slide ${index + 1}`} className={programStyle.image} />
-                                <div className={programStyle.textContent}>
-                                    <h5 className={programStyle.text}>{training[index]}</h5>
-                                </div>
+                    {images.map((image, index) => (
+                        <div className={programStyle.slide} key={index}>
+                            <img src={image} alt={`Slide ${index + 1}`} className={programStyle.image} />
+                            <div className={programStyle.textContent}>
+                                <h5 className={programStyle.text}>{training[index]}</h5>
                             </div>
+                        </div>
 
                     ))}
                 </div>
