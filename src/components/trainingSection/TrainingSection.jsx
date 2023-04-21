@@ -15,6 +15,7 @@ const TrainingSection = () => {
         'https://cdn.pixabay.com/photo/2016/12/02/08/30/fitness-1877209_960_720.jpg',
     },
     {
+     
       name: 'Samantha Lee',
       role: 'Personal trainer',
       bio: 'Samantha is a certified personal trainer with over 10 years of experience in the fitness industry. She specializes in high-intensity interval training (HIIT) and can create personalized workout plans to help you reach your fitness goals.',
