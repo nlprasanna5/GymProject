@@ -53,6 +53,9 @@ const TrainingSection = () => {
               </div>
             ))}
           </div>
+          <div className={style.teamButtonDiv}>
+          <button className={style.meetTeamButton}>Meet our whole team</button>
+          </div>
         </section>
       );
 }

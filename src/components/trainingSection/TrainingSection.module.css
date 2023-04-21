@@ -44,3 +44,29 @@
     font-size: 0.9rem;
   }
   
+  .meetTeamButton {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .teamButtonDiv{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .meetTeamButton {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
