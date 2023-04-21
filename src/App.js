@@ -13,6 +13,8 @@ import LoginMessage from "./components/SuccessMessage/LoginSuccess";
  import RegisterMessage from "./components/SuccessMessage/RegisterSuccess";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer";
+import Trainers from "./pages/trainers/Trainers";
+
 function App() {
   return (
     <div>
@@ -29,6 +31,7 @@ function App() {
       <Route  path="/blogs"  element={<Blogs/>}/>
       <Route path='/login-success' element={<LoginMessage/>}/>
       <Route path='/register-success' element={<RegisterMessage/>}/>
+      <Route path='/trainers' element={<Trainers/>}/>
     </Routes>
     </div>
     <div>

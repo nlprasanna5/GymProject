@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242B2E;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    color: white;
+    margin-bottom: 2rem;
+
+}
+
+.headingContainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 84vw;
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 22vw;
+    background-color: #DC3545;
+    color: white;
+    font-weight: bold;
+
+}
+
+.img {
+    height: 35vh;
+    width: 22vw;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.3rem;
+    margin: 1rem;
+
+}
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 80vw;
+
+    }
+
+    .img {
+        height: 35vh;
+        width: 24.5vw;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 24.5vw;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        /* border:2px solid blue; */
+        width: 80vw;
+
+    }
+
+    .img {
+        height: 35vh;
+        width: 37vw;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 37vw;
+        /* border: 2px solid red; */
+    }
+
+}
+
+
+@media only screen and (max-width:425px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 2rem;
+        width: 85vw;
+
+    }
+
+    .img {
+        height: 35vh;
+        width: 85vw;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 85vw;
+    }
+
+}
