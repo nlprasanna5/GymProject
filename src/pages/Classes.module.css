@@ -88,7 +88,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       margin-top: 4rem;
+       /* margin-top: 4rem; */
     }
     .imgContainer{
         display: flex;
@@ -136,13 +136,15 @@
     }
     .classImage{
         display: flex;
+        height:10rem;
+        width:14rem;
     }
 
     .textContainer{
-        margin-top:4rem;
+        margin-top:1rem;
     }
     .classTitle{
         font-size: 2rem;
-        margin-top: 10.5rem;
+        margin-top: 6.5rem;
     }
 }
