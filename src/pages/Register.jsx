@@ -100,7 +100,7 @@ function Register() {
     if (isUserNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
       const users = getUsers();
       const checkDuplicateRegister = users.find((item) => {
-        return item.email === email;
+        return item.email === email && item.userName === userName;
 
       });
 
