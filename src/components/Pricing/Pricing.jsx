@@ -1,9 +1,66 @@
-import React from 'react';
+import React,{useState} from 'react';
 import style from './Pricing.module.css';
 import { useNavigate } from 'react-router-dom';
+import { getUsers } from '../../Utils/localStorage';
 
 function GymPricing() {
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
   const navigate = useNavigate();
+  const users = getUsers();
+
+  const isLoginExists = users.some( (item)=> (
+    item.isLogin === true
+    // console.log(item)
+  ))
+
+  function handleSubscribeBasic() {
+    
+    alert("Thanks for subscribing")
+    let user = users.filter( (item) => {
+      if(item.isLogin === true) {
+        item.isSubscribed = true
+      }
+      return item;
+    })
+    localStorage.setItem('users',JSON.stringify(user))
+    navigate('/basic')
+  }
+
+  function handleSubscribePremium() {
+   
+    alert("Thanks for subscribing")
+    let user = users.filter( (item) => {
+      if(item.isLogin === true) {
+        item.isSubscribed = true
+      }
+      return item;
+    })
+    localStorage.setItem('users',JSON.stringify(user))
+    navigate('/premium')
+  }
+
+  function handleSubscribeElite() {
+   
+    alert("Thanks for subscribing")
+    let user = users.filter( (item) => {
+      if(item.isLogin === true) {
+        item.isSubscribed = true
+      }
+      return item;
+    })
+    localStorage.setItem('users',JSON.stringify(user))
+    navigate('/elite')
+  }
+
+  function handleStart(){
+    if(!isLoginExists){
+      alert('register,login and then do subscribe')
+    }
+    navigate('/login')
+
+  }
+
   return (
     <div id='pricing' className={style.mainContainer}>
       <div className={style.price}>
@@ -24,7 +81,10 @@ function GymPricing() {
               <li>Basic workout equipment</li>
               <li>No personal training sessions</li>
             </ul>
-            <button onClick={() => navigate('/register')}>Register</button>
+            <button>
+           { isLoginExists ? <p  onClick={handleSubscribeBasic} style={{margin:'0'}}>Subscribe</p> :<p onClick={handleStart} style={{margin:'0'}}>Get Started</p> }
+
+            </button>
           </div>
           <div className={style.pricingPlan}>
             <h2>Premium</h2>
@@ -34,7 +94,9 @@ function GymPricing() {
               <li>Full range of workout equipment</li>
               <li>1 personal training session/month</li>
             </ul>
-            <button onClick={() => navigate('/register')}>Register</button>
+            <button>
+             { isLoginExists ? <p  onClick={handleSubscribePremium} style={{margin:'0'}}>Subscribe</p> : <p onClick={handleStart} style={{margin:'0'}}>Get Started</p>}
+              </button>
           </div>
           <div className={style.pricingPlan}>
             <h2>Elite</h2>
@@ -44,7 +106,9 @@ function GymPricing() {
               <li>Full range of workout equipment</li>
               <li>2 personal training sessions/month</li>
             </ul>
-            <button onClick={() => navigate('/register')}>Register</button>
+            <button >
+            { isLoginExists ? <p  onClick={handleSubscribeElite} style={{margin:'0'}}>Subscribe</p> : <p onClick={handleStart} style={{margin:'0'}}>Get Started</p>}
+              </button>
           </div>
         </div>
       </div>

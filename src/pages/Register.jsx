@@ -13,6 +13,11 @@ function Register() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+  
+ 
+
   const [userNameError, setUserNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
@@ -112,11 +117,15 @@ function Register() {
           userName,
           email,
           password,
-          confirmPassword
+          confirmPassword,
+          isSubscribed: false,
+          isLogin:false
+         
         });
 
         localStorage.setItem('users', JSON.stringify(users));
-        navigate('/register-success');
+        alert('Successfully registered');
+        navigate("/login");
       }
 
 
