@@ -14,6 +14,10 @@ import LoginMessage from "./components/SuccessMessage/LoginSuccess";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer";
 import Trainers from "./pages/trainers/Trainers";
+import GymPricing from "./components/Pricing/Pricing";
+import BasicPriceActivity from "./pages/BasicPriceActivity";
+import PremiumPriceActivity from "./pages/PremiumPriceActivity";
+import ElitePriceActivity from "./pages/ElitePriceActivity";
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
       <Route path='/login-success' element={<LoginMessage/>}/>
       <Route path='/register-success' element={<RegisterMessage/>}/>
       <Route path='/trainers' element={<Trainers/>}/>
+      <Route path='/pricing' element={<GymPricing/>} />
+      <Route path='/basic' element={<BasicPriceActivity/>} />
+      <Route path='/premium' element={<PremiumPriceActivity/>} />
+      <Route path='/elite' element={<ElitePriceActivity/>}  />
     </Routes>
     </div>
     <div>

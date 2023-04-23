@@ -10,6 +10,7 @@ function RegisterMessage() {
             <div className={messageStyle.successMessage}>
                 <div className={messageStyle.success}>
                     <h4 className={messageStyle.log}>Successfully Registered</h4>
+                    <h4>Please subscribe in pricing section</h4>
 
                 </div>
                 <div className={messageStyle.successButton}>
