@@ -41,27 +41,26 @@ function handleLogout(){
               <Nav.Link as={NavLink} to="/pricing">PRICING</Nav.Link>
             </Nav>
             <div className={styles.sub}>
-            <Button  variant="danger" >
+            
               {
                isLogin ?  (
                 <>
                 {
                   loginDetails.isSubscribed ? (
                     <>
-                     <p  style={{margin:'0'}}>Subscribed</p>
+                     <Button  style={{margin:'0'}} variant='danger'>Subscribed</Button>
                     </>
                   ) : (
                     <>
-                     <p onClick={() => navigate('/pricing')} style={{margin:'0'}}>SubscribeNow</p>
+                     <Button onClick={() => navigate('/pricing')} style={{margin:'0'}} variant='danger'>SubscribeNow</Button>
                     </>
                   )
                 }
                 </>
                )
-               : <p onClick={() => navigate('/login')} style={{margin:'0'}}>JOIN US</p>
+               : <Button onClick={() => navigate('/login')} style={{margin:'0'}} variant='danger'>JOIN US</Button>
               }
-            </Button>
-            
+      
              {
                isLogin && <Button style={{margin:'0'}} onClick={handleLogout} variant='danger'>Logout</Button> 
              } 
