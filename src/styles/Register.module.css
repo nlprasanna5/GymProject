@@ -26,10 +26,9 @@
     margin-top: 2rem;
 }
 
-.button {
-    width: 100%;
+.buttons {
+    width: 50%;
     height: 50px;
-    padding: 10px;
     border: none;
     background-color: #DC3545;
     color: white;
@@ -37,8 +36,31 @@
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    align-content: center;
+
+}
+
+.button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #DC3545;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    align-content: center;
+
+}
+
+
+
+.loginButton {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width:100%;
 }
 
 

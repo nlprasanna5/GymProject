@@ -89,11 +89,13 @@ const Login = () => {
           <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password' />
           <span>{passwordError}</span>
         </div>
-        <div>
+        <div >
             <span>{match}</span>
-          <button type="submit" className={loginStyle.button} >
+            <div className={loginStyle.loginButton}>
+          <button type="submit" className={loginStyle.buttons} >
             submit
           </button>
+          </div>
           <p style={{margin: '2rem 0rem'}}>Don't have any account? <small onClick={()=>navigate('/register')} style={{color:'blue',cursor:'pointer'}}>Register</small></p>
         </div>
 
