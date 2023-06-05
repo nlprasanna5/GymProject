@@ -6,12 +6,9 @@ import { getUsers } from '../Utils/localStorage';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [userName, setUserName] = useState('');
+  const [password,setPassword]=useState('');
   const [email, setEmail] = useState('');
-
-  const [isLogin, setIsLogin] = useState(false);
-
-  const [userNameError, setUserNameError] = useState('');
+  const [passwordError,setPasswordError]=useState('');
   const [emailError, setEmailError] = useState('');
   const [match,setMatch]=useState('');
   
@@ -33,17 +30,16 @@ const Login = () => {
     }
   }
 
-  const validateUserName = () => {
-   
-    const regex=/^[a-zA-Z0-9_]{3,16}$/;
-    if (!userName) {
-      setUserNameError('Username is required!');
+  const validatePassword = () => {
+    const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,20}$/;
+    if (!password) {
+      setPasswordError('Password is required!');
       return false;
-    } else if (!regex.test(userName)) {
-      setUserNameError('Username should be 3-16 characters and shouldn\'t include any special character!');
+    } else if (!regex.test(password)) {
+      setPasswordError('Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!');
       return false;
     } else {
-      setUserNameError('');
+      setPasswordError('');
       return true;
     }
   }
@@ -52,22 +48,25 @@ const Login = () => {
     e.preventDefault();
 
     const emailValue=validateEmail();
-    const userValue=validateUserName();
-    const details = users.find((user) => user.email === email && user.userName === userName)
+    const userPassword=validatePassword();
+    const details = users.find((user) => user.email === email && user.password === password);
+
+    let loginIndex = users.findIndex((user) => user.email === email && user.password === password);
+    
+    let loginDetails;
+    if(loginIndex+1){
+      loginDetails=users[loginIndex];
+      console.log(loginDetails);
+      localStorage.setItem('loginDetails',JSON.stringify(loginDetails))
+     
+    }
+    console.log("outside")
 
     
-    if (details && emailValue && userValue) {
-      alert("You can subscribe in pricing section!")
-      const newUser = users.filter( (item) => {
-        if(item.email === email) {
-          item.isLogin = true
-        }
-        return item;
-      })
-      localStorage.setItem('users', JSON.stringify(newUser))
-      // console.log(users)
+    if (details && emailValue && userPassword) {
+      alert("If you haven't subscribed,you can subscribe in pricing section!")
+      localStorage.setItem('login',JSON.stringify(true))
       navigate("/pricing");
-      // navigate('/login-success');
 
     } else {
         setMatch('user not found')
@@ -79,15 +78,16 @@ const Login = () => {
     <div className={loginStyle.container} >
       <form onSubmit={handleSubmit} className={loginStyle.form}>
         <h1 className={loginStyle.h1} >Login</h1>
-        <div className={loginStyle.formInput}>
-          <label>UserName</label>
-          <input type='text' value={userName} onChange={(e) => setUserName(e.target.value)} placeholder='Username' />
-          <span>{userNameError}</span>
-        </div>
+        
         <div className={loginStyle.formInput}>
           <label>Email</label>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'  />
           <span>{emailError}</span>
+        </div>
+        <div className={loginStyle.formInput}>
+          <label>Password</label>
+          <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password' />
+          <span>{passwordError}</span>
         </div>
         <div>
             <span>{match}</span>

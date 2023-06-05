@@ -1,30 +1,24 @@
-
-
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import { getUsers } from '../../Utils/localStorage';
+import styles from './Header.module.css';
 
 import { NavLink, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const navigate = useNavigate(null)
-  
-  const users = getUsers();
+  const isLogin = JSON.parse(localStorage.getItem('login')) || false;
 
-  const isLoginExists = users.some((item) => (
-    item.isLogin === true
-    // console.log(item)
-  ))
+  const loginDetails = JSON.parse(localStorage.getItem('loginDetails')) || [];
 
-  let itr = users.find((item) => {
-    return item.isSubscribed === true
-  })
-
-
+function handleLogout(){
+  console.log("logout")
+  localStorage.setItem('login',JSON.stringify(false))
+  navigate('/login')
+}
 
   return (
 
@@ -35,7 +29,6 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              {/* <Nav.Link  as={NavLink} to="/"> HOME</Nav.Link> */}
               <NavDropdown title="HOME" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#pricing">PRICING</NavDropdown.Item>
                 <NavDropdown.Item href="#training">TRAINING</NavDropdown.Item>
@@ -47,12 +40,33 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/blogs">BLOGS</Nav.Link>
               <Nav.Link as={NavLink} to="/pricing">PRICING</Nav.Link>
             </Nav>
-            <Button  variant="danger">
+            <div className={styles.sub}>
+            <Button  variant="danger" >
               {
-                isLoginExists ? itr ? "Subscribed" : <p onClick={() => navigate('/pricing')} style={{margin:'0'}}>SubscribeNow</p> : <p onClick={() => navigate('/login')} style={{margin:'0'}}>JOIN US</p>
+               isLogin ?  (
+                <>
+                {
+                  loginDetails.isSubscribed ? (
+                    <>
+                     <p  style={{margin:'0'}}>Subscribed</p>
+                    </>
+                  ) : (
+                    <>
+                     <p onClick={() => navigate('/pricing')} style={{margin:'0'}}>SubscribeNow</p>
+                    </>
+                  )
+                }
+                </>
+               )
+               : <p onClick={() => navigate('/login')} style={{margin:'0'}}>JOIN US</p>
               }
             </Button>
-            {/* <Button onClick={toRegister} variant="danger"> */}
+            
+             {
+               isLogin && <Button style={{margin:'0'}} onClick={handleLogout} variant='danger'>Logout</Button> 
+             } 
+        
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -61,5 +75,5 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
 

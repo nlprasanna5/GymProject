@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect, useRef } from "react";
 import FormInput from "../Utils/FormInput";
 import { getUsers } from "../Utils/localStorage";
@@ -12,19 +10,11 @@ function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
-  const [isSubscribed, setIsSubscribed] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
-  
- 
-
   const [userNameError, setUserNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
-
   const [duplicate, setDuplicate] = useState('');
-
   const firstNameRef = useRef(null);
   const navigate = useNavigate();
 
@@ -32,9 +22,6 @@ function Register() {
   useEffect(() => {
     firstNameRef.current.focus();
   }, []);
-
-
-
 
   const validateUserName = () => {
     const regex = /^[a-zA-Z0-9_]{3,16}$/;
@@ -99,9 +86,6 @@ function Register() {
     const isPasswordValid = validatePassword();
     const isConfirmPasswordValid = validateConfirmPassword();
 
-    // let user = getUsers();
-
-
     if (isUserNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
       const users = getUsers();
       const checkDuplicateRegister = users.find((item) => {
@@ -118,9 +102,6 @@ function Register() {
           email,
           password,
           confirmPassword,
-          isSubscribed: false,
-          isLogin:false
-         
         });
 
         localStorage.setItem('users', JSON.stringify(users));
